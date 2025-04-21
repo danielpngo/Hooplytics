@@ -19,6 +19,10 @@ Compare yourself to an active NBA player. Input your basketball tendencies, such
     - Tools: NBA Player Database API
 2. Filters: Users will be able to filter their results, such as height, team, age, etc.
     - Tools: HTML/CSS/JS/React
+3. Secret Lineup Creator: Another feature could be where users try to make the best 5-man lineup out of current NBA players and get a score of how good the team is.
+    - Tools: NBA Player Database API
+4. Profiles: Users will be able to save profiles of people they have compared.
+    - Tools: HTML/CSS/JS/React
 
 ## Timeline
 April 24th: Get UI elements done as well as sliders/dropdowns.  
