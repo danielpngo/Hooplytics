@@ -16,7 +16,7 @@ Compare yourself to an active NBA player. Input your basketball tendencies, such
 
 ## Optional Features
 1. Past NBA Players: Users will be able to compare themselves to retired NBA Players.
-    - Tools: NBA Player Database API
+    - Tools: NBA Player Database API (Express Server when getting comparison)
 2. Filters: Users will be able to filter their results, such as height, team, age, etc.
     - Tools: HTML/CSS/JS/React
 3. Secret Lineup Creator: Another feature could be where users try to make the best 5-man lineup out of current NBA players and get a score of how good the team is.
