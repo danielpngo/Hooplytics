@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import { Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import Stats from './pages/Stats'
+import Compare from './pages/Compare'
 import './App.css'
 
 // function App() {
@@ -41,6 +42,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/stats' element={<Stats />} />
+        <Route path='/compare' element={<Compare />} />
       </Routes>
     </div>
   )
