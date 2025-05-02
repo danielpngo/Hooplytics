@@ -34,8 +34,17 @@ export default function Stats() {
         'Position': 'What position do you align best with'
     }
 
+    const getDefaultRatings = () => {
+        const defaults = {};
+        Object.values(attributes).flat().forEach((subskill) => {
+            defaults[subskill] = subskill === 'Position' ? "PG" : 50;
+        });
+        return defaults;
+    };
+    
+
     const [attribute, setAttribute] = useState("");
-    const [ratings, setRatings] = useState({})
+    const [ratings, setRatings] = useState(getDefaultRatings);
 
     const sliderChange = (subskill, value) => {
         setRatings((prev) => ({
@@ -132,7 +141,7 @@ export default function Stats() {
 
             <button
                 className="button"
-                onClick={() => navigate('/compare')}
+                onClick={() => navigate('/compare', {state: {ratings}})}
             >
                 Get my NBA comparison!
             </button>
