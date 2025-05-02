@@ -37,7 +37,7 @@ export default function Stats() {
     const getDefaultRatings = () => {
         const defaults = {};
         Object.values(attributes).flat().forEach((subskill) => {
-            defaults[subskill] = subskill === 'Position' ? "PG" : 50;
+            defaults[subskill] = subskill === 'Position' ? "G" : 50;
         });
         return defaults;
     };
@@ -60,11 +60,11 @@ export default function Stats() {
             <h1> Rate yourself based on how you play compared to players around your level or who you play with </h1>
 
             <h2> 
-                A '0' means you're the worst among those around you 
+                0 means you're the worst among those around you 
                 <br></br>
-                A '50' means you're average among those around you
+                50 means you're average among those around you
                 <br></br>
-                A '100' means you're the best among those around you
+                100 means you're the best among those around you
             </h2>
 
             <label htmlFor="attribute-select"> 
@@ -108,10 +108,8 @@ export default function Stats() {
                                     className="position-dropdown"
                                 >
                                     <option value="">--Select Position--</option>
-                                    <option value="PG">Point Guard (PG)</option>
-                                    <option value="SG">Shooting Guard (SG)</option>
-                                    <option value="SF">Small Forward (SF)</option>
-                                    <option value="PF">Power Forward (PF)</option>
+                                    <option value="G">Guard (G)</option>
+                                    <option value="F">Forward (F)</option>
                                     <option value="C">Center (C)</option>
                                 </select>
                             ) : (
